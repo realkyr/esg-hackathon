@@ -37,6 +37,7 @@ export default {
       },
       borderRadius: {
         'landing-section': '0px 0px 0px 90px',
+        'leave': '6px 0px 6px 0px',
       },
       height: {
         '100dvh': '100dvh',

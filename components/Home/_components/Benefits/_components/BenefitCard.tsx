@@ -3,8 +3,8 @@ import {BenefitCardProps} from "./types";
 
 const BenefitCard = ({ children, icon, title }: BenefitCardProps) => {
   return (
-    <div className="h-60 w-full rounded-[40px] bg-gradient-to-b from-secondary to-primary p-[3px]">
-      <div className="flex flex-col p-8 rounded-[37px] h-full w-full items-start justify-start bg-white">
+    <div className="h-60 md:h-80 lg:h-60 w-full rounded-[40px] bg-gradient-to-b from-secondary to-primary p-[3px]">
+      <div className="flex flex-col p-6 md:p-8 rounded-[37px] h-full w-full items-start justify-start bg-white">
         <div className="flex items-center justify-start">
           {icon}
 
