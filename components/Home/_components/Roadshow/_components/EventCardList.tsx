@@ -1,13 +1,12 @@
-import React from 'react';
-import {EventCardProps} from "@/components/Home/_components/Roadshow/_components/type";
-import EventCard from "@/components/Home/_components/Roadshow/_components/EventCard";
+import React from 'react'
+import { EventCardProps } from '@/components/Home/_components/Roadshow/_components/type'
+import EventCard from '@/components/Home/_components/Roadshow/_components/EventCard'
 
 interface EventCardListProps {
-  events: EventCardProps[];
+  events: EventCardProps[]
 }
 
-const EventCardList = ({ events }: EventCardListProps) => (
-  events.map((event) => (<EventCard {...event} />))
-);
+const EventCardList = ({ events }: EventCardListProps) =>
+  events.map((event) => <EventCard {...event} />)
 
-export default EventCardList;
+export default EventCardList

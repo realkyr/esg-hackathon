@@ -1,12 +1,14 @@
-import React from 'react';
-import {ContainerProps} from "@/ui/types";
+import React from 'react'
+import { ContainerProps } from '@/ui/types'
 
-const Section = ({children, className = ''}: ContainerProps) => {
+const Section = ({ children, className = '' }: ContainerProps) => {
   return (
-    <section className={`min-h-100dvh flex items-center justify-center ${className}`}>
+    <section
+      className={`min-h-100dvh flex items-center justify-center ${className}`}
+    >
       {children}
     </section>
-  );
+  )
 }
 
-export default Section;
+export default Section
