@@ -3,6 +3,7 @@ import Section from "@/ui/Section";
 
 import BenefitCardLists from "./_components/BenefitCardLists";
 import {benefits} from "./constants";
+import Container from "@/ui/Container";
 
 
 const Benefits = () => {
@@ -16,10 +17,11 @@ const Benefits = () => {
         ESG HACKATHON PROJECT BY SME D BANK
       </h3>
 
-      {/*  grid 1 columns md 2 columns*/}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-        <BenefitCardLists benefits={benefits} />
-      </div>
+      <Container className="px-[16.66%]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+          <BenefitCardLists benefits={benefits}/>
+        </div>
+      </Container>
     </Section>
   )
 };
