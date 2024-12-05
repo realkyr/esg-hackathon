@@ -17,7 +17,7 @@ const Landing = () => {
         ESG HACKATHON PROJECT
       </h1>
 
-      <h2 className="text-[1.25rem] md:text-3xl font-bold text-center">
+      <h2 className="text-xl md:text-3xl font-bold text-center">
         BY SME D BANK
       </h2>
 
