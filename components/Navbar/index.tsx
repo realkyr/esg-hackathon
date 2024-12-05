@@ -1,17 +1,20 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 type NavbarProps = {};
 
 const Navbar: React.FC<NavbarProps> = () => {
   return (
     <div className="sticky top-0 z-10 bg-white">
-      <nav className="flex items-center justify-between bg-white py-4 px-[8.33%]">
+      <nav className="flex items-center justify-between bg-[#F7FCFF] py-4 px-[8.33%]">
         {/* Logo */}
-        <img
-          src="/logo.png"
+        <Image
+          width={66}
+          height={88}
+          src="/assets/images/logo.png"
           alt="SME Development Bank Logo"
-          className="h-10 w-auto"
+          className="h-[88px] w-auto"
         />
 
         {/* Navigation Links */}
@@ -34,9 +37,13 @@ const Navbar: React.FC<NavbarProps> = () => {
         </ul>
 
         {/* Signup Button */}
-        <button className="rounded-md bg-gradient-to-r from-blue-500 to-green-500 px-6 py-2 text-sm font-semibold text-white hover:opacity-90">
-          สมัครเข้าร่วม
-        </button>
+        <Image
+          width={134}
+          height={50}
+          src="/assets/images/register-btn.png"
+          alt="Register Button"
+          className="h-[50px] w-auto"
+        />
       </nav>
     </div>
   );

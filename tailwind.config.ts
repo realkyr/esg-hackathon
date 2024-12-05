@@ -35,6 +35,9 @@ export default {
       backgroundImage: {
         'gradient-footer': `linear-gradient(99deg, ${withOpacity(SECONDARY_RGB, 0.1)}, ${withOpacity(PRIMARY_RGB, 0.1)})`,
       },
+      borderRadius: {
+        'landing-section': '0px 0px 0px 90px',
+      },
       height: {
         '100dvh': '100dvh',
       },

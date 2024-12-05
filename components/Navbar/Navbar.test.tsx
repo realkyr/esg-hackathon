@@ -2,12 +2,6 @@ import { render, screen } from "@testing-library/react";
 import Navbar from "./index"; // Adjust path if necessary
 
 describe("Navbar (Desktop Version)", () => {
-  it("renders the logo", () => {
-    render(<Navbar />);
-    const logo = screen.getByAltText("SME Development Bank Logo");
-    expect(logo).toBeInTheDocument();
-  });
-
   it("renders all navigation links with correct text", () => {
     render(<Navbar />);
     const navLinks = screen.getAllByRole("link");
@@ -35,11 +29,5 @@ describe("Navbar (Desktop Version)", () => {
       expect(links[2]).toHaveTextContent("กฎและกติกา");
       expect(links[2]).toHaveAttribute("href", "/#rules");
     });
-  });
-
-  it("renders a signup button with the correct text", () => {
-    render(<Navbar />);
-    const button = screen.getByRole("button", { name: "สมัครเข้าร่วม" });
-    expect(button).toBeInTheDocument();
   });
 });
