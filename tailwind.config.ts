@@ -12,6 +12,16 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#46A748"
+      },
+      height: {
+        '100dvh': '100dvh',
+      },
+      minHeight: {
+        '100dvh': '100dvh',
+      },
+      maxHeight: {
+        '100dvh': '100dvh',
       },
     },
   },
