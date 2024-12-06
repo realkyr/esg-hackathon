@@ -51,7 +51,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           height={50}
           src='/assets/images/register-btn.png'
           alt='Register Button'
-          className='hidden md:block h-[50px] w-auto'
+          className='hidden md:block h-[50px] w-auto cursor-pointer'
         />
 
         {/* Menu Icon */}
